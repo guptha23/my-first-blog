@@ -1,0 +1,36 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>CS Guptha's Blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        
+        <div class="page-header">
+            <h1>Chandra Sekhar Guptha</h1>
+        </div>
+        
+        <div class="post">
+            <h2><a href="">First Blog</a></h2>
+            <p>Om Sai Ram</p>
+        </div>
+
+        <div class="post">
+            <h2><a href="">Second Blog</a></h2>
+            <p>Sri Pada Rajam Saranam Prapadye!</p>
+        </div>
+        
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
